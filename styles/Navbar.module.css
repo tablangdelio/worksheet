@@ -1,0 +1,27 @@
+
+nav.nav {
+    display: flex;
+    justify-content: center;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.788);
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(204, 111, 58);
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #cf6f2fbe;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #8f6535;
+
+  }
