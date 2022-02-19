@@ -13,9 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='main'>
-         <div>
+         <h1 className='text-3xl'>
              Worksheet Technical section 
-         </div>
+            
+         </h1>
+         <h5>Delio Tablang Jr</h5>
       </main>
     </div>
   );

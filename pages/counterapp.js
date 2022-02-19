@@ -25,14 +25,28 @@ const Counterapp = () => {
     }
 
     return(
-        <div className='main'>  
-            <span>{ count == 0 ? '': parity} </span>
-            <span>{ count }</span>
-            <div>
-                <Button label=" + " handleClick={handleAddCount} />
-                <Button label=" - " handleClick={handleSubtractCount} />
+        
+        <div className=''>  
+         
+                <div className='flex justify-between'>
+                    <span className={` text-5xl my-5 ${parity === `odd` ? 'text-stone': 'text-rose-500' } ` }>{ count }</span>
+                    <span className={`mb-5 text-6xl ${parity === `odd` ? 'text-stone': 'text-rose-500' }`} >{ count == 0 ? 'zero': parity} </span>
+                </div>
+            <div className='my-5 flex'>
+                <Button 
+                    className="bg-stone-900 mr-5 " 
+                    label="&larr;" 
+                    handleClick={handleAddCount} />
+                    
+                <Button  
+                    className="bg-stone-900"  
+                    label="&#8594;" 
+                    handleClick={handleSubtractCount} />
             </div>
-            <Button label="reset" handleClick={() => {  setCount(0) } } />
+            <Button 
+                className="bg-stone-900" 
+                label="&#8634;"
+                 handleClick={() => {  setCount(0) } } />
         </div>
     )
 }

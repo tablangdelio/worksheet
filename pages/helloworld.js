@@ -4,13 +4,19 @@ const Helloworld = () => {
   
     return(
         
-        <main>
+   
             <div className={styles.container}>
-                <h1>
+                <h1 
+                    className='
+                            text-7xl 
+                            text-orange-700
+                            font-extrabold
+                            subpixel-antialiased
+                            '>
                     Hello World
                 </h1>
             </div>
-        </main>
+    
     )
 }
 

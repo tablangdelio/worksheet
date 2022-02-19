@@ -6,7 +6,14 @@ const Layout = ({ children }) => {
     return(
         <>
             <Navbar />
-            { children }
+            <div className=' relative
+                        flex
+                        flex-wrap 
+                        justify-center
+                        items-center
+                        min-h-screen'>
+                    { children }
+            </div>
         </>
     );
 }

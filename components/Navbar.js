@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css"
 
-const Navbar = () => {
+const Navbar = ({ title }) => {
     return(
         <>
-            <nav className={styles.nav}>
+            <nav className='bg-gradient-to-r from-purple-500 to-pink-500 text-white uppercase py-3'>
                 <ul className={styles.breadcrumb}>
                     <li>
                         <Link href="/">
@@ -38,6 +38,8 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
+           
+         
         </>
     );
 }
