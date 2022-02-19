@@ -51,6 +51,7 @@ const Counterapp = () => {
             <code className='bg-stone-900 text-orange-500 mt-7 p-1'> 
                 <a 
                     target="_blank" 
+                    rel="noreferrer"
                     href="https://github.com/tablangdelio/worksheet/blob/main/pages/counterapp.js"> 
                     https://github.com/tablangdelio/worksheet/blob/main/pages/counterapp.js
                 </a>

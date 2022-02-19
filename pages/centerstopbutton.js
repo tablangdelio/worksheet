@@ -24,6 +24,7 @@ const CenterStopButton = () => {
                 <code className='bg-stone-900 text-orange-500 mt-7 p-1'> 
                 <a 
                     target="_blank" 
+                    rel="noreferrer"
                     href="https://github.com/tablangdelio/worksheet/blob/main/pages/centerstopbutton.js"> 
                     https://github.com/tablangdelio/worksheet/blob/main/pages/centerstopbutton.js
                     </a>
