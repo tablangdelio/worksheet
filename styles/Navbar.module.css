@@ -1,0 +1,22 @@
+
+nav.nav {
+    display: flex;
+    justify-content: center;
+}
+ul.breadcrumb {
+  
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    padding-left: 2rem;
+  }
+
+  ul.breadcrumb li a {
+  
+    text-decoration: none;
+  }
+ 
