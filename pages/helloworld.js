@@ -16,6 +16,7 @@ const Helloworld = () => {
                             '>
                     <a    
                         target="_blank" 
+                        rel="noreferrer"
                         href="https://github.com/tablangdelio/worksheet/blob/main/styles/Helloworld.module.css">  
                         Hello World
                     </a>
