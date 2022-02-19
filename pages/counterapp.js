@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Button from '../components/button'
-
-
+import Button from '../components/Button'
 const Counterapp = () => {
     const[ count, setCount ] = useState(0)
     const[ parity, setParity ] = useState('')
@@ -25,19 +23,20 @@ const Counterapp = () => {
         setCount(prev => prev - 1)
 
     }
-  
-    
+
     return(
-        <main className='main'>
-            <div>  
-                <span>{ count == 0 ? '': parity} </span>
-                <span>{ count }</span> 
+        <div className='main'>  
+            <span>{ count == 0 ? '': parity} </span>
+            <span>{ count }</span>
+            <div>
                 <Button label=" + " handleClick={handleAddCount} />
                 <Button label=" - " handleClick={handleSubtractCount} />
-                <Button label="reset" handleClick={() => {  setCount(0) } } />
             </div>
-        </main>
+            <Button label="reset" handleClick={() => {  setCount(0) } } />
+        </div>
     )
 }
+
+
 
 export default  Counterapp;

@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="description" content="worksheet" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className='main'>
          <div>
              Worksheet Technical section 
          </div>
