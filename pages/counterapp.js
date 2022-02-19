@@ -25,13 +25,12 @@ const Counterapp = () => {
     }
 
     return(
-        
-        <div className=''>  
-         
-                <div className='flex justify-between'>
-                    <span className={` text-5xl my-5 ${parity === `odd` ? 'text-stone': 'text-rose-500' } ` }>{ count }</span>
-                    <span className={`mb-5 text-6xl ${parity === `odd` ? 'text-stone': 'text-rose-500' }`} >{ count == 0 ? 'zero': parity} </span>
-                </div>
+        <>
+        <div className='bg-stone-50 p-10 rounded shadow'>  
+            <div className='flex justify-between'>
+                 <span className={` text-5xl my-5 ${parity === `odd` ? 'text-stone': 'text-rose-500' } ` }>{ count }</span>
+                <span className={`mb-5 text-6xl ${parity === `odd` ? 'text-stone': 'text-rose-500' }`} >{ count == 0 ? 'zero': parity} </span>
+            </div>
             <div className='my-5 flex'>
                 <Button 
                     className="bg-stone-900 mr-5 " 
@@ -48,6 +47,16 @@ const Counterapp = () => {
                 label="&#8634;"
                  handleClick={() => {  setCount(0) } } />
         </div>
+        <div className="mt-10">
+            <code className='bg-stone-900 text-orange-500 mt-7 p-1'> 
+                <a 
+                    target="_blank" 
+                    href="https://github.com/tablangdelio/worksheet/blob/main/pages/counterapp.js"> 
+                    https://github.com/tablangdelio/worksheet/blob/main/pages/counterapp.js
+                </a>
+            </code>
+        </div>
+    </>
     )
 }
 

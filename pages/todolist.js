@@ -26,7 +26,6 @@ const TodoList = () => {
     
   },[todoData])
  
-
     const handleChecked = (e, index) => {
       const checkTodo = [...todos];
 
@@ -50,7 +49,6 @@ const TodoList = () => {
 
       e.preventDefault();
       
-
       const newtodo = {
         
         text: inputTodo,
@@ -64,7 +62,6 @@ const TodoList = () => {
    
     const handleRemove = (id) => {
      
-      console.log(id);
      const todo = todos.filter( (todo, index ) => {
           return index !== id
       })
@@ -72,6 +69,7 @@ const TodoList = () => {
       setTodos(todo)
     }
     return(
+      <>
         <div className="w-6/12 bg-stone-50 p-8 drop-shadow-lg">
           <h1 className="text-3xl mb-5"> TODO List</h1>
             <form onSubmit={handleAddTodo} className="mb-5 ">
@@ -135,6 +133,16 @@ const TodoList = () => {
             : 'No todos '
             }
         </div>
+        <div className="mt-5">
+            <code className='bg-stone-900 text-orange-500 mt-7 p-1'> 
+                <a 
+                    target="_blank" 
+                    href="https://github.com/tablangdelio/worksheet/blob/main/pages/todolist.js"> 
+                    https://github.com/tablangdelio/worksheet/blob/main/pages/todolist.js
+                </a>
+            </code>
+        </div>
+        </>
     )
 }
 

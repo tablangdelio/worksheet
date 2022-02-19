@@ -22,10 +22,9 @@ const Calculator = () => {
 
     }
     return(
-
+        <>
         <div className='flex 
                 flex-col 
-            
                 max-w-screen-xl 
                 bg-stone-100 
                 p-7 rounded-lg  
@@ -77,6 +76,10 @@ const Calculator = () => {
                 <Button     label="&#8634;"  className="bg-stone-900" handleClick={handleReset}/> 
             </div>
         </div>
+        <div className='mt-7'>
+            <code className='bg-stone-900 text-orange-500 mt-7 p-1'> <a target="_blank" href="https://github.com/tablangdelio/worksheet/blob/main/pages/calculator.js"> https://github.com/tablangdelio/worksheet/blob/main/pages/calculator.js </a></code>
+        </div>
+        </>
 
     )
 }
