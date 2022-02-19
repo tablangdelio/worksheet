@@ -15,10 +15,19 @@ export default function Home() {
       <main className='main'>
          <h1 className='text-3xl'>
              Worksheet Technical section 
-            
          </h1>
          <h5>Delio Tablang Jr</h5>
+         <div className="mt-5">
+                <code className='bg-stone-900 text-orange-500 mt-7 p-1'> 
+                <a 
+                    target="_blank" 
+                    href="https://github.com/tablangdelio/worksheet">         
+                      https://github.com/tablangdelio/worksheet
+                </a>
+                </code>
+          </div>
       </main>
+    
     </div>
   );
 }

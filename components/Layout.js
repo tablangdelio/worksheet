@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
             <Navbar />
             <div className=' relative
                         flex
-                        flex-wrap 
+                        flex-col
                         justify-center
                         items-center
                         min-h-screen'>

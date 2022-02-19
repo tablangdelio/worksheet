@@ -20,6 +20,15 @@ const CenterStopButton = () => {
     return(
         <div className="main">
             <button style={style} onClick={handleClick}> STOP </button>
+            <div className="mt-5">
+                <code className='bg-stone-900 text-orange-500 mt-7 p-1'> 
+                <a 
+                    target="_blank" 
+                    href="https://github.com/tablangdelio/worksheet/blob/main/pages/centerstopbutton.js"> 
+                    https://github.com/tablangdelio/worksheet/blob/main/pages/centerstopbutton.js
+                    </a>
+                </code>
+            </div>
         </div>
     )
 }
